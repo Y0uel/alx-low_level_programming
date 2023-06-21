@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * main - Entry point
- * Discription: 'alphabet output'
- * Return: always 0
+ * print_alphabet - prints alphabet
+ * is written by eyuel
+ * Return: 0
  */
+
 void print_alphabet(void)
 {
 	char e;

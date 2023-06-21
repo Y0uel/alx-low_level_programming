@@ -1,9 +1,11 @@
 #include "main.h"
 /**
- * main - Entry point
- * Discription: 'this program outputs positive or negative values'
- * Return: always 0
+ * _isalpha - _isalpha
+ * @c: character to be checked
+ *
+ * Return: 1 if characteris a letter, 0 otherwise
  */
+
 int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))

@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * main - Entry point
- * Discription: 'this program outputs positive or negative values'
- * Return: always 0
+ * jack_bauer - prints time table in this format: HH:MM
+ * Return: the sum of two numbers.
  */
 void jack_bauer(void)
 {

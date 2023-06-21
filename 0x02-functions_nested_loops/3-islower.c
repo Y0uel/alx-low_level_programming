@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - Entry point
- * Discription: 'this program outputs positive or negative values'
- * Return: always 0
+ * _islower - prints alphabet
+ * @c: the character
+ * Return: 1 if lowercase, 0 if not
  */
 int _islower(int c)
 {
