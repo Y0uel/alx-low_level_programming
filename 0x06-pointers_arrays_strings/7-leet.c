@@ -1,18 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code for
+ * leet - Write a function that encodes a string into 1337
  *
- * Return: Always 0.
+ * @changed: This is the input string
+ *
+ * Return: String converted to 1337
  */
-int main(void)
-{
-    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-    char *p;
 
-    p = leet(s);
-    printf("%s", p);
-    printf("%s", s);
-    return (0);
+char *leet(char *changed)
+{
+	int index, j;
+	char minus[] = {'a', 'e', 'o', 't', 'l', '\0'};
+	char mayus[] = {'A', 'E', 'O', 'T', 'L', '\0'};
+	char numbers[] = {'4', '3', '0', '7', '1', '\0'};
+
+	for (index = 0; changed[index] != '\0'; ++index)
+	{
+		for (j = 0; j < 5; j++)
+		{
+			if (changed[index] == minus[j] || changed[index] == mayus[j])
+			{
+				changed[index] = numbers[j];
+			}
+		}
+	}
+	return (changed);
 }
